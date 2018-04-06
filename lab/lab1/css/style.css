@@ -24,11 +24,10 @@ body {
 }
 
 .item:hover {
-    background-color: #fff;
+    background-color: #eee;
 }
 .item {
     padding: 10px;
-    background-color: #eee;
 }
 
 .item:not(:last-child) {
@@ -78,13 +77,19 @@ Media Queries
 ============= */
 
 @media screen and (min-width: 480px) and (max-width: 800px) {
-    /*.item {
-        background-color: blue;
-    }*/
-}
+    .sidebar {
+      width:50%;
+      }
+    .map {
+      left:270px;
+    }
+    }
 
 @media screen and (max-width: 479px) {
-    /*.item {
-        background-color: red;
-    }*/
+  .sidebar {
+    display: none;
+    }
+  .map {
+    left:0px;
+  }
 }
